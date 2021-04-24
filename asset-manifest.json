@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Reverse_MBTI/static/css/main.c12552c7.chunk.css",
+    "main.js": "/Reverse_MBTI/static/js/main.3296c612.chunk.js",
+    "main.js.map": "/Reverse_MBTI/static/js/main.3296c612.chunk.js.map",
+    "runtime-main.js": "/Reverse_MBTI/static/js/runtime-main.28ac40c8.js",
+    "runtime-main.js.map": "/Reverse_MBTI/static/js/runtime-main.28ac40c8.js.map",
+    "static/js/2.34352190.chunk.js": "/Reverse_MBTI/static/js/2.34352190.chunk.js",
+    "static/js/2.34352190.chunk.js.map": "/Reverse_MBTI/static/js/2.34352190.chunk.js.map",
+    "static/js/3.9f0cf7c2.chunk.js": "/Reverse_MBTI/static/js/3.9f0cf7c2.chunk.js",
+    "static/js/3.9f0cf7c2.chunk.js.map": "/Reverse_MBTI/static/js/3.9f0cf7c2.chunk.js.map",
+    "index.html": "/Reverse_MBTI/index.html",
+    "static/css/main.c12552c7.chunk.css.map": "/Reverse_MBTI/static/css/main.c12552c7.chunk.css.map",
+    "static/js/2.34352190.chunk.js.LICENSE.txt": "/Reverse_MBTI/static/js/2.34352190.chunk.js.LICENSE.txt",
+    "static/media/logo.427e129b.jpg": "/Reverse_MBTI/static/media/logo.427e129b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28ac40c8.js",
+    "static/js/2.34352190.chunk.js",
+    "static/css/main.c12552c7.chunk.css",
+    "static/js/main.3296c612.chunk.js"
+  ]
+}
