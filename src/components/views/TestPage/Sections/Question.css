@@ -1,0 +1,28 @@
+.list {
+    text-align: center;
+}
+
+.answer-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.answer-list label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-btn {
+    font-size: calc(3vmin);
+    padding: 7px 20px;
+    border-radius: 30px;
+    background-color: rgb(12, 78, 139);
+    color: white;
+    margin-left: 60px;
+    text-align: end;
+}
+
+.answer-btn result {
+    margin-top: 50px;
+}
