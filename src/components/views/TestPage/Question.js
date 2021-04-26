@@ -9,11 +9,12 @@ class Question extends Component {
 
   handleSelect = (event) => {
     const { id } = event.target;
-    alert(id);
-    this.props.handleSubmit(id);
-    if (this.state.index < 24) {
+    this.props.handleSubmit(this.props.questionData[this.state.index].id, id);
+    if (this.state.index < 26) {
       this.setState({ index: this.state.index + 1 });
-    } else window.location.href = "/result";
+    } else {
+      this.props.handleResult();
+    }
   };
 
   render() {

@@ -1,0 +1,46 @@
+.Result {
+    text-align: center;
+}
+
+.Result-header {
+    background-color: #f6f6e9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #282c34;
+}
+
+.Result-header h1 {
+    font-size: 4em;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.Result-header h2 span {
+    color: rgb(12, 78, 139);
+}
+
+.Result-header small {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.Result-btn {
+    margin-top: 40px;
+    font-size: calc(3vmin);
+    padding: 5px 20px;
+    border-radius: 25px;
+    background-color: rgb(12, 78, 139);
+    color: white;
+}
+
+#Result-logo-left {
+    margin-right: 40px
+}
+
+#Result-logo-right {
+    margin-left: 40px
+}

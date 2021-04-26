@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import logo from "./Sections/logo.jpg";
 import "./Sections/LandingPage.css";
 
@@ -29,11 +30,11 @@ class LandingPage extends Component {
               </a>
             </small>
           </p>
-          <a href="./test">
+          <Link to="/test">
             <button className="App-btn">
               <strong>검사 실시 ➜</strong>
             </button>
-          </a>
+          </Link>
         </header>
       </div>
     );
