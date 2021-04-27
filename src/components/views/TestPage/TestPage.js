@@ -216,28 +216,31 @@ class TestPage extends Component {
     T/F : 5~16
     J/P : 22~26
     */
+    const { result } = this.state;
+
     if (questionNum <= 4) {
       if (answer === "answer1")
-        this.setState({ result: { E: this.state.result.E + 1 } });
-      else this.setState({ result: { I: this.state.result.I + 1 } });
-    } else if (5 <= questionNum <= 16) {
+        this.setState({ result: { ...result, E: result.E + 1 } });
+      else this.setState({ result: { ...result, I: result.I + 1 } });
+    } else if (questionNum <= 16) {
       if (answer === "answer1")
-        this.setState({ result: { T: this.state.result.T + 1 } });
-      else this.setState({ result: { F: this.state.result.F + 1 } });
-    } else if (17 <= questionNum <= 21) {
+        this.setState({ result: { ...result, T: result.T + 1 } });
+      else this.setState({ result: { ...result, F: result.F + 1 } });
+    } else if (questionNum <= 21) {
       if (answer === "answer1")
-        this.setState({ result: { S: this.state.result.S + 1 } });
-      else this.setState({ result: { N: this.state.result.N + 1 } });
-    } else if (22 <= questionNum <= 26) {
+        this.setState({ result: { ...result, S: result.S + 1 } });
+      else this.setState({ result: { ...result, N: result.N + 1 } });
+    } else {
       if (answer === "answer1")
-        this.setState({ result: { J: this.state.result.J + 1 } });
-      else this.setState({ result: { P: this.state.result.P + 1 } });
+        this.setState({ result: { ...result, J: result.J + 1 } });
+      else this.setState({ result: { ...result, P: result.P + 1 } });
     }
   };
 
   handleResult = () => {
     const { result } = this.state;
     let MBTIresult = "";
+
     if (result.E > result.I) MBTIresult += "E";
     else MBTIresult += "I";
     if (result.S > result.N) MBTIresult += "S";

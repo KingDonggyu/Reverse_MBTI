@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./Sections/Question.css";
 import "../ResultPage/ResultPage";
 
@@ -9,23 +10,21 @@ class Question extends Component {
 
   handleSelect = (event) => {
     const { id } = event.target;
-    this.props.handleSubmit(this.props.questionData[this.state.index].id, id);
-    if (this.state.index < 26) {
-      this.setState({ index: this.state.index + 1 });
-    } else {
-      this.props.handleResult();
-    }
+    const { index } = this.state;
+    this.props.handleSubmit(index, id);
+    if (index < 27) this.setState({ index: index + 1 });
   };
 
   render() {
     const { questionData } = this.props;
-    const answer = questionData[this.state.index];
+    const { index } = this.state;
+    const answer = questionData[index];
 
+    if (index === 27) this.props.handleResult();
     return (
       <div className="list">
-        <h3>
-          {answer.id + 1}. {answer.Q}
-        </h3>
+        <p>({index + 1}/27)</p>
+        <h3>{answer.Q}</h3>
         <hr />
         <br />
         <div className="answer-list">
@@ -36,7 +35,7 @@ class Question extends Component {
               id="answer1"
               onClick={this.handleSelect}
             >
-              선택 ➜
+              <strong>➜</strong>
             </button>
           </label>
           <br />
@@ -47,10 +46,15 @@ class Question extends Component {
               id="answer2"
               onClick={this.handleSelect}
             >
-              선택 ➜
+              <strong>➜</strong>
             </button>
           </label>
         </div>
+        <Link to="/">
+          <button className="replay-btn">
+            <strong>다시하기</strong>
+          </button>
+        </Link>
       </div>
     );
   }
