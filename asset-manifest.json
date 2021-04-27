@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Reverse_MBTI/static/css/main.da5967ea.chunk.css",
-    "main.js": "/Reverse_MBTI/static/js/main.4804addd.chunk.js",
-    "main.js.map": "/Reverse_MBTI/static/js/main.4804addd.chunk.js.map",
+    "main.js": "/Reverse_MBTI/static/js/main.128d4fd7.chunk.js",
+    "main.js.map": "/Reverse_MBTI/static/js/main.128d4fd7.chunk.js.map",
     "runtime-main.js": "/Reverse_MBTI/static/js/runtime-main.97f650e5.js",
     "runtime-main.js.map": "/Reverse_MBTI/static/js/runtime-main.97f650e5.js.map",
     "static/js/2.b4d3daf1.chunk.js": "/Reverse_MBTI/static/js/2.b4d3daf1.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.97f650e5.js",
     "static/js/2.b4d3daf1.chunk.js",
     "static/css/main.da5967ea.chunk.css",
-    "static/js/main.4804addd.chunk.js"
+    "static/js/main.128d4fd7.chunk.js"
   ]
 }
