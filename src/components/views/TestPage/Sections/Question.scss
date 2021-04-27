@@ -1,0 +1,38 @@
+.list {
+    text-align: center;
+}
+
+.question {
+    color: rgb(12, 78, 139);
+}
+
+.answer-list {
+    text-align: end;
+    .answer {
+        display: inline-block;
+        font-size: 25px;
+    }
+}
+
+.answer-btn {
+    font-size: calc(3vmin);
+    padding: 0px 20px;
+    border-radius: 30px;
+    background-color: rgb(12, 78, 139);
+    color: white;
+    margin-left: 60px;
+    &:hover {
+        background-color: rgb(2, 54, 100);
+    }
+}
+
+.replay-btn {
+    border-radius: 30px;
+    padding: 2px 20px;
+    background-color: #282c34;
+    color: #f6f6e9;
+    margin-top: 100px;
+    &:hover {
+        background-color: #1c1d1f;
+    }
+}

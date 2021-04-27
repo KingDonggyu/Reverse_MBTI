@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Sections/TestPage.css";
+import "./Sections/TestPage.scss";
 import Question from "./Question";
 
 class TestPage extends Component {
@@ -33,7 +33,7 @@ class TestPage extends Component {
         //E, I
         id: 2,
         Q: "당신은 어떤 사람에 가까운가요?",
-        A1: "친구랑 엄청 놀고 집에 가서는 기빨려서 쉬는 사람",
+        A1: "친구랑 엄청 놀고 집에 가서는 지쳐서 쉬는 사람",
         A2: "엄청 놀고 집에 가서도 또 노는(놀 수 있는) 사람",
       },
       {

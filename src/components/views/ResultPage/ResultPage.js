@@ -1,25 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Sections/ResultPage.css";
-import logo from "../LandingPage/Sections/logo.jpg";
+import "./Sections/ResultPage.scss";
+import { Typography } from "@material-ui/core";
 
 const ResultPage = ({ match }) => {
   const mbti = match.params.MBTI;
+
   return (
     <div className="Result">
       <header className="Result-header">
-        <h2>
+        <Typography variant="h3">
           당신의 <span>거꾸로 MBTI</span> 결과는
-        </h2>
-        <h1>
-          <img src={logo} id="Result-logo-left" alt="logo" width="250px" />
-          {mbti}
-          <img src={logo} id="Result-logo-right" alt="logo" width="250px" />
-        </h1>
+        </Typography>
+        <Typography variant="h1">{mbti}</Typography>
         <br />
-        자신의 MBTI와 일치한지 확인해 보세요!
-        <small>
-          아직 검사 해 보지 않았다면?{" "}
+        <Typography variant="h5">
+          자신의 MBTI와 일치한지 확인해 보세요!
+        </Typography>
+        <Link to="/">
+          <button className="Result-btn">
+            <Typography variant="h5">메인화면 ➜</Typography>
+          </button>
+        </Link>
+      </header>
+      <footer>
+        <Typography>
+          나의 MBTI를 모른다면? {">>"}
           <a
             href="https://www.16personalities.com/ko"
             className="mbti-link"
@@ -27,13 +33,8 @@ const ResultPage = ({ match }) => {
           >
             MBTI 검사하러 가기
           </a>
-        </small>
-        <Link to="/">
-          <button className="Result-btn">
-            <strong>메인화면 ➜</strong>
-          </button>
-        </Link>
-      </header>
+        </Typography>
+      </footer>
     </div>
   );
 };

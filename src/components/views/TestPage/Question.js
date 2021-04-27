@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./Sections/Question.css";
+import "./Sections/Question.scss";
 import "../ResultPage/ResultPage";
+import { Typography } from "@material-ui/core";
 
 class Question extends Component {
   state = {
@@ -23,36 +24,46 @@ class Question extends Component {
     if (index === 27) this.props.handleResult();
     return (
       <div className="list">
-        <p>({index + 1}/27)</p>
-        <h3>{answer.Q}</h3>
+        <p>
+          <Typography variant="h4">({index + 1}/27)</Typography>
+        </p>
+        <Typography variant="h4" className="question">
+          {answer.Q}
+        </Typography>
         <hr />
         <br />
         <div className="answer-list">
-          <label>
-            {answer.A1}
+          <div>
+            <label for="answer1">
+              <Typography className="answer">{answer.A1}</Typography>
+            </label>
             <button
               className="answer-btn"
               id="answer1"
+              name="answer1"
               onClick={this.handleSelect}
             >
               <strong>➜</strong>
             </button>
-          </label>
+          </div>
           <br />
-          <label>
-            {answer.A2}
+          <div>
+            <label for="answer2">
+              <Typography className="answer">{answer.A2}</Typography>
+            </label>
             <button
               className="answer-btn"
               id="answer2"
+              name="answer1"
               onClick={this.handleSelect}
             >
               <strong>➜</strong>
             </button>
-          </label>
+          </div>
         </div>
         <Link to="/">
           <button className="replay-btn">
-            <strong>다시하기</strong>
+            <Typography>다시하기</Typography>
           </button>
         </Link>
       </div>
