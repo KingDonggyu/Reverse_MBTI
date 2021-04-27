@@ -13,14 +13,12 @@ class LandingPage extends Component {
           <Typography variant="h2">
             <span>거꾸로</span> MBTI
           </Typography>
-          <p>
-            <Typography variant="h5">
-              SNS에서 주로 볼 수 있는 'MBTI별 반응·특징'을 통해 MBTI를
-              확인합니다.
-            </Typography>
-            <br />
-          </p>
-          <Link to="/test">
+          <br />
+          <Typography variant="h5">
+            SNS에서 주로 볼 수 있는 'MBTI별 반응·특징'을 통해 MBTI를 확인합니다.
+          </Typography>
+          <br />
+          <Link to="/Reverse_MBTI/test">
             <button className="App-btn">
               <Typography variant="h5">검사 실시 ➜</Typography>
             </button>

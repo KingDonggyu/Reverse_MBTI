@@ -61,7 +61,7 @@ class Question extends Component {
             </button>
           </div>
         </div>
-        <Link to="/">
+        <Link to="/Reverse_MBTI">
           <button className="replay-btn">
             <Typography>다시하기</Typography>
           </button>

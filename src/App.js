@@ -10,9 +10,9 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/test" component={TestPage} />
-          <Route path="/result/:MBTI" component={ResultPage} />
+          <Route exact path="/Reverse_MBTI" component={LandingPage} />
+          <Route exact path="/Reverse_MBTI/test" component={TestPage} />
+          <Route path="/Reverse_MBTI/result/:MBTI" component={ResultPage} />
         </Switch>
       </Router>
     );

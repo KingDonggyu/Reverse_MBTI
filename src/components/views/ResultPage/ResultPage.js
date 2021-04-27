@@ -17,7 +17,7 @@ const ResultPage = ({ match }) => {
         <Typography variant="h5">
           자신의 MBTI와 일치한지 확인해 보세요!
         </Typography>
-        <Link to="/">
+        <Link to="/Reverse_MBTI/">
           <button className="Result-btn">
             <Typography variant="h5">메인화면 ➜</Typography>
           </button>

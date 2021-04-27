@@ -250,7 +250,7 @@ class TestPage extends Component {
     if (result.J > result.P) MBTIresult += "J";
     else MBTIresult += "P";
 
-    window.location.href = `/result/${MBTIresult}`;
+    window.location.href = `/Reverse_MBTI/result/${MBTIresult}`;
   };
 
   render() {
