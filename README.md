@@ -1,3 +1,3 @@
-# Reverse_MBTI
+# 거꾸로 MBTI
 
 personal web project
