@@ -24,6 +24,10 @@
     &:hover {
         background-color: rgb(2, 54, 100);
     }
+    &:focus {
+        border: none;
+        outline: none;
+    }
 }
 
 .replay-btn {
