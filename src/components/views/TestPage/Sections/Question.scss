@@ -35,4 +35,8 @@
     &:hover {
         background-color: #1c1d1f;
     }
+    &:focus {
+        border: none;
+        outline: none;
+    }
 }

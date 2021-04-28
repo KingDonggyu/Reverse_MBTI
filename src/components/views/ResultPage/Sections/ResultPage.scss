@@ -31,4 +31,11 @@
     border-radius: 25px;
     background-color: rgb(12, 78, 139);
     color: white;
+    &:hover {
+        background-color: rgb(2, 54, 100);
+    }
+    &:focus {
+        border: none;
+        outline: none;
+    }
 }
