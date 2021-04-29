@@ -217,21 +217,20 @@ class TestPage extends Component {
     J/P : 22~26
     */
     const { result } = this.state;
-
     if (questionNum <= 4) {
-      if (answer === "answer1")
+      if (answer === 1)
         this.setState({ result: { ...result, E: result.E + 1 } });
       else this.setState({ result: { ...result, I: result.I + 1 } });
     } else if (questionNum <= 16) {
-      if (answer === "answer1")
+      if (answer === 1)
         this.setState({ result: { ...result, T: result.T + 1 } });
       else this.setState({ result: { ...result, F: result.F + 1 } });
     } else if (questionNum <= 21) {
-      if (answer === "answer1")
+      if (answer === 1)
         this.setState({ result: { ...result, S: result.S + 1 } });
       else this.setState({ result: { ...result, N: result.N + 1 } });
     } else {
-      if (answer === "answer1")
+      if (answer === 1)
         this.setState({ result: { ...result, J: result.J + 1 } });
       else this.setState({ result: { ...result, P: result.P + 1 } });
     }

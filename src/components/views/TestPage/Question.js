@@ -5,14 +5,17 @@ import "../ResultPage/ResultPage";
 import { Typography } from "@material-ui/core";
 
 class Question extends Component {
-  state = {
-    index: 0,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      index: 0,
+    };
+    this.handleSelect = this.handleSelect.bind(this);
+  }
 
-  handleSelect = (event) => {
-    const { id } = event.target;
+  handleSelect = (key, e) => {
     const { index } = this.state;
-    this.props.handleSubmit(index, id);
+    this.props.handleSubmit(index, key);
     if (index < 27) this.setState({ index: index + 1 });
   };
 
@@ -24,9 +27,7 @@ class Question extends Component {
     if (index === 27) this.props.handleResult();
     return (
       <div className="list">
-        <p>
-          <Typography variant="h4">({index + 1}/27)</Typography>
-        </p>
+        <Typography variant="h4">({index + 1}/27)</Typography>
         <Typography variant="h4" className="question">
           {answer.Q}
         </Typography>
@@ -34,28 +35,26 @@ class Question extends Component {
         <br />
         <div className="answer-list">
           <div className="answer-item">
-            <label for="answer1">
+            <label htmlFor="answer1">
               <Typography className="answer">{answer.A1}</Typography>
             </label>
             <button
               className="answer-btn"
               id="answer1"
-              name="answer1"
-              onClick={this.handleSelect}
+              onClick={(e) => this.handleSelect(1, e)}
             >
               <strong>➜</strong>
             </button>
           </div>
           <br />
           <div className="answer-item">
-            <label for="answer2">
+            <label htmlFor="answer2">
               <Typography className="answer">{answer.A2}</Typography>
             </label>
             <button
               className="answer-btn"
               id="answer2"
-              name="answer1"
-              onClick={this.handleSelect}
+              onClick={(e) => this.handleSelect(2, e)}
             >
               <strong>➜</strong>
             </button>
