@@ -13,9 +13,6 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        label {
-            vertical-align: middle;
-        }
     }
     .answer {
         display: inline-block;
@@ -31,7 +28,6 @@
     background-color: rgb(12, 78, 139);
     color: white;
     margin-left: 60px;
-    vertical-align: middle;
     &:hover {
         background-color: rgb(2, 54, 100);
     }

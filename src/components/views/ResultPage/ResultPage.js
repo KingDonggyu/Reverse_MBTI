@@ -16,7 +16,7 @@ const ResultPage = ({ match }) => {
           {mbti}
         </Typography>
         <br />
-        <Typography variant="h5">
+        <Typography variant="h5" className="Result-massage">
           자신의 MBTI와 일치한지 확인해 보세요!
         </Typography>
         <Link to="/Reverse_MBTI">
