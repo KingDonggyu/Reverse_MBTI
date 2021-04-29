@@ -1,6 +1,6 @@
 .list {
     text-align: center;
-    @media (max-width: 1000px) {
+    @media (max-width: 600px) {
         h4 {
             font-size: 25px;
         }
@@ -22,7 +22,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        @media (max-width: 1000px) {
+        @media (max-width: 600px) {
             .answer {
                 font-size: 17px;
             }
