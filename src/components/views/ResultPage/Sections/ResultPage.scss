@@ -11,6 +11,17 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: #282c34;
+    @media (max-width: 1000px) {
+        .Result-text {
+            font-size: 4rem;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+        h5 {
+            font-size: 1.2rem;
+        }
+    }
     h3 {
         margin-top: 20px;
         margin-bottom: 15px;

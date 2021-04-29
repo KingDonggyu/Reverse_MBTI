@@ -14,7 +14,7 @@ class LandingPage extends Component {
             <span>거꾸로</span> MBTI
           </Typography>
           <br />
-          <Typography variant="h5">
+          <Typography variant="h5" className="App-explan">
             SNS에서 주로 볼 수 있는 'MBTI별 반응·특징'을 통해 MBTI를 확인합니다.
           </Typography>
           <br />
@@ -25,7 +25,7 @@ class LandingPage extends Component {
           </Link>
         </header>
         <footer>
-          <Typography className="small">
+          <Typography className="App-small">
             *전문 기관 외의 성격유형검사는 정확한 검사가 아니므로 재미로만
             봐주시기 바랍니다.*
             <a

@@ -11,6 +11,22 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: #282c34;
+    @media (max-width: 1000px) {
+        min-height: 94vh;
+        .App-logo {
+            width: 180px;
+        }
+        h2 {
+            font-size: 50px;
+        }
+        .App-explan {
+            width: 290px;
+            font-size: 20px;
+        }
+        .App-btn h5 {
+            font-size: 20px;
+        }
+    }
     h2 {
         margin-top: 0px;
         margin-bottom: 20px;
@@ -37,5 +53,13 @@
     }
     &:focus {
         outline: none;
+    }
+}
+
+footer {
+    @media (max-width: 1000px) {
+        .App-small {
+            font-size: 15px;
+        }
     }
 }
