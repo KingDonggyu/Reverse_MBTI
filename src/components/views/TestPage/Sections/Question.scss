@@ -10,6 +10,9 @@
     text-align: end;
     .answer-item {
         height: 35px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
         label {
             vertical-align: middle;
         }
