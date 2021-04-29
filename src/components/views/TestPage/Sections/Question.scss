@@ -10,20 +10,25 @@
     text-align: end;
     .answer-item {
         height: 35px;
+        label {
+            vertical-align: middle;
+        }
     }
     .answer {
         display: inline-block;
         font-size: 25px;
+        vertical-align: middle;
     }
 }
 
 .answer-btn {
-    font-size: calc(3vmin);
+    font-size: calc(2vmin);
     padding: 0px 20px;
     border-radius: 30px;
     background-color: rgb(12, 78, 139);
     color: white;
     margin-left: 60px;
+    vertical-align: middle;
     &:hover {
         background-color: rgb(2, 54, 100);
     }
