@@ -8,6 +8,9 @@
 
 .answer-list {
     text-align: end;
+    .answer-item {
+        height: 35px;
+    }
     .answer {
         display: inline-block;
         font-size: 25px;
@@ -15,7 +18,7 @@
 }
 
 .answer-btn {
-    font-size: calc(2vmin);
+    font-size: calc(3vmin);
     padding: 0px 20px;
     border-radius: 30px;
     background-color: rgb(12, 78, 139);
@@ -25,7 +28,6 @@
         background-color: rgb(2, 54, 100);
     }
     &:focus {
-        border: none;
         outline: none;
     }
 }
@@ -40,7 +42,6 @@
         background-color: #1c1d1f;
     }
     &:focus {
-        border: none;
         outline: none;
     }
 }

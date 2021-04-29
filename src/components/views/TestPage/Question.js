@@ -33,7 +33,7 @@ class Question extends Component {
         <hr />
         <br />
         <div className="answer-list">
-          <div>
+          <div className="answer-item">
             <label for="answer1">
               <Typography className="answer">{answer.A1}</Typography>
             </label>
@@ -47,7 +47,7 @@ class Question extends Component {
             </button>
           </div>
           <br />
-          <div>
+          <div className="answer-item">
             <label for="answer2">
               <Typography className="answer">{answer.A2}</Typography>
             </label>

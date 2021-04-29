@@ -12,7 +12,9 @@ const ResultPage = ({ match }) => {
         <Typography variant="h3">
           당신의 <span>거꾸로 MBTI</span> 결과는
         </Typography>
-        <Typography variant="h1">{mbti}</Typography>
+        <Typography variant="h1" className="Result-text">
+          {mbti}
+        </Typography>
         <br />
         <Typography variant="h5">
           자신의 MBTI와 일치한지 확인해 보세요!
